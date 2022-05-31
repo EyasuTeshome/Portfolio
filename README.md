@@ -3,13 +3,12 @@
 # Personal Portifolio
 
 
-In this project I used replicate one of Figma's template to create my own portifolio by using flexbox.
+In this project I replicate one of Figma's template to create my own portifolio by using flexbox.
 
-in this project I have used linter for HTML and CSS, to make sure there are no linter errors on the code. This portifolio website contains four sections:
+In this project I have used linter for HTML and CSS, to make sure there are no linter errors on the code. This portifolio website contains four sections:
 1. header
 2. home
-3. about me
-4. contact me
+
 ## Built With
 
 - HTML
