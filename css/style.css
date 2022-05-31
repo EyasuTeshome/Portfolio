@@ -12,18 +12,24 @@ header {
   background-color: white;
 }
 
-header h4 {
+nav {
+  display: flex;
+}
+
+header a {
+  text-decoration: none;
   color: #6070ff;
-  margin-left: 24px;
+  margin: 23.94px 0 23.94px 24px;
   width: 100vm;
   height: 20px;
   font-size: 18px;
   display: flex;
+  font-weight: 700;
+  margin-right: auto;
 }
 
 .nav-pic {
   height: 12px;
-  margin-left: auto;
   padding-right: 15px;
 }
 
@@ -32,7 +38,7 @@ nav a {
 }
 
 .home {
-  background-image: url("img/3.svg");
+  background-image: url("../img/3.svg");
   background-color: white;
   background-size: cover;
   border-bottom-left-radius: 70px;
@@ -59,5 +65,11 @@ nav a {
 }
 
 .home a {
-  padding-left: 8px;
+  padding: 8px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
 }
