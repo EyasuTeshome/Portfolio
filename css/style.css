@@ -59,8 +59,14 @@ nav a {
   color: #7f8cff;
 }
 
-.home a {
+.home li {
   padding-left: 8px;
+}
+
+.home ul {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
 }
 
 .work {
@@ -128,32 +134,23 @@ h2 {
   background-color: #ebebff;
   border-radius: 8px;
   padding: 4px 12px;
+  margin-right: 8px;
   color: #6070ff;
-
-  /* margin-right: 10px; */
-  margin-right: 25px;
 }
 
-.button {
+.work-button {
   box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
+  background-color: white;
   align-items: center;
   padding: 12px;
   width: 133px;
   height: 58px;
   left: 0;
-  gap: 10px;
   border: 1px solid #6070ff;
   border-radius: 8px;
-}
-
-.button p {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  display: flex;
-  text-align: center;
   letter-spacing: 0.03em;
   color: #396df2;
 }
@@ -225,8 +222,14 @@ h2 {
   padding: 0;
 }
 
-.about-content a {
+.about-content li {
   padding-left: 8px;
+}
+
+.about-content ul {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
 }
 
 .my-button {
