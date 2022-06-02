@@ -8,6 +8,8 @@ In this project I replicate one of Figma's template to create my own portifolio 
 In this project I have used linter for HTML and CSS, to make sure there are no linter errors on the code. This portifolio website contains four sections:
 1. header
 2. home
+3. Work
+4. about-me
 
 ## Built With
 
