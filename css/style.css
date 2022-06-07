@@ -33,7 +33,7 @@ nav a {
 }
 
 .home {
-  background-image: url("img/3.svg");
+  background-image: url("../img/3.svg");
   background-color: white;
   background-size: cover;
   border-bottom-left-radius: 70px;
@@ -380,6 +380,101 @@ button:hover {
   padding-top: 30px;
   width: 12px;
   height: 6px;
+}
+
+.form-container{
+ background-color: white;
+  display: flex;
+  flex-direction: column;
+ 
+
+}
+.form-min{
+  background-color: #6070FF;
+  border-top-left-radius: 70px;
+  background-image: url("../img/form.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 103px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 24px 0 24px;
+}
+
+.form-des p{
+width: 327px;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+text-align: center;
+color: #EBEBFF;
+align-items: center;
+margin-left: auto;
+margin-right: auto;
+
+
+}
+.form-des h1{
+font-weight: 700;
+font-size: 40px;
+line-height: 52px;
+text-align: center;
+color: #FFFFFF;
+margin-top: 103px;
+
+}
+form{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+form ul{
+  list-style: none;
+  padding-left: 0px;
+}
+form li{
+  margin-bottom: 20px;
+  
+}
+
+#user-name, #email-address{
+  width: 327px;
+  height: 48px;
+background: #FFFFFF;
+border: 1px solid #CFD8DC;
+border-radius: 8px;
+}
+#msg{
+  background: #FFFFFF;
+border: 1px solid #CFD8DC;
+border-radius: 8px;
+width: 327px;
+}
+form button{
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0 16px;
+width: 140px;
+height: 48px;
+left: 24px;
+background: #FFFFFF;
+border-radius: 8px;
+font-weight: 500;
+font-size: 17px;
+line-height: 24px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #6070FF;
+border: none;
+}
+.shape{
+  margin-left: 120px;
+  margin-bottom: 8px;;
 }
 
 hr {
