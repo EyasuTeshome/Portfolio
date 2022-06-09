@@ -512,7 +512,7 @@ hr {
   flex: 0 0 100%;
 }
 
-@media screen and (max-width: 566px) {
+@media screen and (max-width: 768px) {
   .nav-ul a {
     display: none;
   }
@@ -528,7 +528,7 @@ hr {
   }
 }
 
-@media screen and (min-width: 567px) {
+@media screen and (min-width: 768px) {
   #home {
     background-image: url(../img/home_bg.svg);
     background-repeat: no-repeat;
