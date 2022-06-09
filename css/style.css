@@ -54,6 +54,11 @@ nav a {
   margin-bottom: 0;
   font-weight: 900;
   font-family: 'Poppins', sans-serif;
+  transition: width 1s, height 2s;
+}
+
+.home h1:hover {
+  font-size: 70px;
 }
 
 .home p {
@@ -61,7 +66,7 @@ nav a {
 }
 
 .connect {
-  color: #7f8cff;
+  color: #7f8cff; 
 }
 
 form li {
