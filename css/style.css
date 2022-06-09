@@ -41,7 +41,6 @@ header {
 
 .nav-ul li {
     display: flex;
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -50,6 +49,11 @@ header {
     text-align: center;
     color: #344563;
     margin-left: 32px;
+}
+
+.nav-ul a {
+    text-decoration: none;
+    transition: transform .2s;
 }
 
 .home {
@@ -221,6 +225,10 @@ button:hover {
     display: inline-flex;
     padding-left: 20px;
     color: #7a869a;
+}
+
+.work-content li {
+    margin-left: 32px;
 }
 
 .work-img2 {
@@ -514,7 +522,7 @@ hr {
     #home {
         padding: 160px 260px 90px 130px;
         height: 70vh;
-        padding: 160px 150px 90px 130px;
+        padding: 160px 200px 90px 130px;
         text-align: left;
         border-bottom-left-radius: 20%;
         background-color: #fff;
@@ -534,6 +542,61 @@ hr {
         display: none;
     }
     .work-img {
+        width: 50%;
         height: 448px;
+    }
+    .description-container2,
+    .description-container4 {
+        width: 50%;
+        margin-right: 46px;
+        margin-left: 46px;
+    }
+    .description-container1,
+    .description-container3 {
+        width: 50%;
+        margin-left: 46px;
+        margin-right: 46px;
+    }
+    .grid-item {
+        display: flex;
+        flex-direction: row;
+    }
+    .grid-item2,
+    .grid-item4 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .about-myself {
+        display: flex;
+        flex-direction: row;
+    }
+    .about-description {
+        width: 50%;
+        margin-right: 37px;
+        margin-left: 80px;
+    }
+    .languages-list li {
+        display: flex;
+        flex-direction: column;
+        width: 122px;
+        height: 120px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-right: 12px;
+    }
+    .languages-list ul {
+        display: flex;
+        flex-direction: row;
+    }
+    .form-des p {
+        width: 400px;
+    }
+    .shape {
+        display: none;
+    }
+    .nav-ul a:hover {
+        transform: scale(1.5);
+        color: #2230d2;
     }
 }
