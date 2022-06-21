@@ -16,6 +16,7 @@ In this project I have used linter for HTML and CSS, to make sure there are no l
 
 - HTML
 - CSS
+- Javascript
 
 
 ## Live Demo (if available)
@@ -30,8 +31,8 @@ To successfully utilize this project first of all you need to clone or download 
 
 ## prerequisites:
 . VS code
-. HTML and CSS extension
-. node.js (for linter)
+. HTML, CSS and Javascript extension
+. node.js 
 
 
 ## Authors
@@ -41,6 +42,10 @@ To successfully utilize this project first of all you need to clone or download 
 - GitHub: [@EyasuTeshome](https://github.com/EyasuTeshome)
 - Twitter: [@EyasuTeshome](https://twitter.com/EyasuTeshome)
 - LinkedIn: [Eyasu Teshome](https://linkedin.com/in/EyasuTeshome)
+
+## Contributors
+👤 Faustin Makutano
+👤 Mehria-Rahmani
 
 
 ## 🤝 Contributing
