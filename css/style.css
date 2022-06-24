@@ -596,15 +596,9 @@ hr {
         color: #fff;
         opacity: 100%;
     }
-    .close2 {
-        width: 12px;
-        height: 12px;
+    .close1 {
         margin-left: 90%;
         margin-top: 24px;
-        margin-right: 34px;
-        display: block;
-        color: black;
-        opacity: 100%;
     }
     .links-container {
         list-style: none;
@@ -735,16 +729,9 @@ hr {
         display: flex;
         flex-direction: row;
     }
-    .close2 {
-        width: 12px;
-        height: 12px;
+    .close1 {
         margin-left: 90%;
-        margin-top: 24px;
         margin-right: 34px;
-        display: block;
-        color: black;
-        opacity: 100%;
-        background-color: #000;
     }
 }
 

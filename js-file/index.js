@@ -78,7 +78,7 @@ seeProjectDetail.forEach((button) => {
     projectDetail.innerHTML = `
         <div class="overlay">
         <div id="modal">
-        <button data-close-button class="close1">&times;</button>
+        <img data-close-button class="close1" alt="Close Botton" src="img/close2.png">
             <div class="project-detail-header">
                 <h3>${selectedProject.name}</h3>
 
