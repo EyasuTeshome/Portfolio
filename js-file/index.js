@@ -129,3 +129,14 @@ seeProjectDetail.forEach((button) => {
     });
   });
 });
+
+const submit = document.querySelector('.submit-btn');
+submit.addEventListener('click', (event) => {
+  const error = document.querySelector('.error-message');
+  const email = document.getElementById('email-address').value;
+  const islowerCase = (str) => str === str.toLowerCase();
+  if (!islowerCase(email)) {
+    event.preventDefault();
+    error.innerHTML = 'Please make sure the E-mail <br>doesn\'t have uppercase letters';
+  }
+});
