@@ -163,3 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
     messageForm.value = formObject.comment;
   }
 });
+
+fullNameForm.onchange = handleChange;
+emailForm.onchange = handleChange;
+messageForm.onchange = handleChange;
