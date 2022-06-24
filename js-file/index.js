@@ -92,8 +92,7 @@ seeProjectDetail.forEach((button) => {
                     <li>${selectedProject.name_detail[2]}</li>
                 </ul>
             </div>
-            <div class="work-img-pop" style="background: url(${selectedProject.featured_image});
-      background-size: cover; width: 100%;"></div>
+            <div class="work-img-pop"><img class="work-img-pop1" src="${selectedProject.featured_image}" alt=""></div>
             <div class="flex">
                 <div class="p-description">
                     <p>
@@ -108,10 +107,10 @@ seeProjectDetail.forEach((button) => {
 
                     </ul>
                     <div class="project-detail-buttons">
-                        <a href="${selectedProject.link_to_live[2]}"><button class="work-button1 see-source">${selectedProject.link_to_live[0]}
+                        <a class="project-link" href="${selectedProject.link_to_live[2]}"><button class="work-button1 see-source">${selectedProject.link_to_live[0]}
               <img class="see-source-img" src=${selectedProject.link_to_live[1]} alt="" /></button>
             </a>
-                        <a href="${selectedProject.link_to_source[2]}"><button class="work-button1 see-source">${selectedProject.link_to_source[0]}
+                        <a class="project-link" href="${selectedProject.link_to_source[2]}"><button class="work-button1 see-source">${selectedProject.link_to_source[0]}
               <img class="see-source-img" src=${selectedProject.link_to_source[1]} alt="" /></button>
             </a>
                     </div>
