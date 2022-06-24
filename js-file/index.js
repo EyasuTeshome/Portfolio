@@ -7,8 +7,8 @@ const closeBtn = document.querySelector('[data-close-button]');
 
 const seeProjectDetail = document.querySelectorAll('.work-button');
 const projectDetail = document.querySelector('.project-detail');
-const mainTag = document.querySelector('.home');
-const header = document.querySelector('.header');
+const mainTag = document.querySelector('.container-all');
+const header = document.querySelector('.work');
 
 menu.addEventListener('click', () => {
   mobMenu.classList.toggle('active');
@@ -29,7 +29,7 @@ link3.addEventListener('click', () => {
 const projects = [{
   id: '1',
   name: 'Tonic',
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
   featured_image: './img/Snapshoot1.png',
   link_to_live: ['See live', './img/live.png', 'https://github.com'],
   link_to_source: ['See source', './img/git.png', 'https://github.com'],
@@ -39,7 +39,7 @@ const projects = [{
 {
   id: '2',
   name: 'Tonic',
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
   featured_image: './img/Snapshoot2.png',
   link_to_live: ['See live', './img/live.png', 'https://github.com'],
   link_to_source: ['See source', './img/git.png', 'https://github.com'],
@@ -49,7 +49,7 @@ const projects = [{
 {
   id: '3',
   name: 'Tonic',
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
   featured_image: './img/Snapshoot3.png',
   link_to_live: ['See live', './img/live.png', 'https://github.com'],
   link_to_source: ['See source', './img/git.png', 'https://github.com'],
@@ -59,7 +59,7 @@ const projects = [{
 {
   id: '4',
   name: 'Tonic',
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
   featured_image: './img/Snapshoot4.png',
   link_to_live: ['See live', './img/live.png', 'https://github.com'],
   link_to_source: ['See source', './img/git.png', 'https://github.com'],
@@ -78,15 +78,13 @@ seeProjectDetail.forEach((button) => {
     projectDetail.innerHTML = `
         <div class="overlay">
         <div id="modal">
-        <img data-close-button class="close1" alt="Close Botton" src="img/close2.png">
             <div class="project-detail-header">
                 <h3>${selectedProject.name}</h3>
-
+                <img data-close-button class="close1" alt="Close Botton" src="img/close2.png">
             </div>
-            <div class="work-content">
-                <ul class="client-name">
-                    <li>${selectedProject.name_detail[0]}</li>
-                </ul>
+            <div class="work-content work-content-pop">
+                    <p>${selectedProject.name_detail[0]}</p>
+               
                 <ul>
                     <li>${selectedProject.name_detail[1]}</li>
                 </ul>
@@ -95,9 +93,9 @@ seeProjectDetail.forEach((button) => {
                 </ul>
             </div>
             <div class="work-img-pop" style="background: url(${selectedProject.featured_image});
-      background-size: cover; width: auto;"></div>
+      background-size: cover; width: 100%;"></div>
             <div class="flex">
-                <div>
+                <div class="p-description">
                     <p>
                         ${selectedProject.description}
                     </p>
@@ -127,6 +125,8 @@ seeProjectDetail.forEach((button) => {
     const projectDetailClose = document.querySelector('.close1');
     projectDetailClose.addEventListener('click', () => {
       projectDetail.classList.add('hide');
+      mainTag.classList.remove('fixed_postion');
+      header.classList.remove('fixed_postion');
     });
   });
 });
