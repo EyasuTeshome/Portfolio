@@ -834,3 +834,12 @@ hr {
   text-decoration: none;
 }
 
+.button-p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error-message{
+  margin-left: 10px;
+  color: red;
+}
