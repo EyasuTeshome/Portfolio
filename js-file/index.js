@@ -11,77 +11,74 @@ const mainTag = document.querySelector('.home');
 const header = document.querySelector('.header');
 
 menu.addEventListener('click', () => {
-    mobMenu.classList.toggle('active');
+  mobMenu.classList.toggle('active');
 });
 closeBtn.addEventListener('click', () => {
-    mobMenu.classList.remove('active');
-    projectDetail.classList.remove('active');
+  mobMenu.classList.remove('active');
 });
 link.addEventListener('click', () => {
-    mobMenu.classList.remove('active');
+  mobMenu.classList.remove('active');
 });
 link2.addEventListener('click', () => {
-    mobMenu.classList.remove('active');
+  mobMenu.classList.remove('active');
 });
 link3.addEventListener('click', () => {
-    mobMenu.classList.remove('active');
+  mobMenu.classList.remove('active');
 });
 
-
-
 const projects = [{
-        id: '1',
-        name: 'Tonic',
-        description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        featured_image: './img/Snapshoot1.png',
-        link_to_live: ['See live', './img/live.png', 'https://github.com'],
-        link_to_source: ['See source', './img/git.png', 'https://github.com'],
-        technologies: ['React', 'Redux', 'React-Router'],
-        name_detail: ['Eyasu Teshome ', 'Front-End Dev', '2022'],
-    },
-    {
-        id: '2',
-        name: 'Tonic',
-        description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        featured_image: './img/Snapshoot2.png',
-        link_to_live: ['See live', './img/live.png', 'https://github.com'],
-        link_to_source: ['See source', './img/git.png', 'https://github.com'],
-        technologies: ['React', 'Redux', 'React-Router'],
-        name_detail: ['Eyasu Teshome', 'Front-End Dev', '2021'],
-    },
-    {
-        id: '3',
-        name: 'Tonic',
-        description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        featured_image: './img/Snapshoot3.png',
-        link_to_live: ['See live', './img/live.png', 'https://github.com'],
-        link_to_source: ['See source', './img/git.png', 'https://github.com'],
-        technologies: ['React', 'Redux Toolkit'],
-        name_detail: ['Contributors: Eyasu Teshome', 'Full-stack website', '2022'],
-    },
-    {
-        id: '4',
-        name: 'Tonic',
-        description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        featured_image: './img/Snapshoot4.png',
-        link_to_live: ['See live', './img/live.png', 'https://github.com'],
-        link_to_source: ['See source', './img/git.png', 'https://github.com'],
-        technologies: ['html', 'css', 'javaScript'],
-        name_detail: ['Eyasu Teshome', 'Front-End Dev', '2021'],
-    },
+  id: '1',
+  name: 'Tonic',
+  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  featured_image: './img/Snapshoot1.png',
+  link_to_live: ['See live', './img/live.png', 'https://github.com'],
+  link_to_source: ['See source', './img/git.png', 'https://github.com'],
+  technologies: ['html', 'css', 'javaScript'],
+  name_detail: ['Eyasu Teshome ', 'Front-End Dev', '2022'],
+},
+{
+  id: '2',
+  name: 'Tonic',
+  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  featured_image: './img/Snapshoot2.png',
+  link_to_live: ['See live', './img/live.png', 'https://github.com'],
+  link_to_source: ['See source', './img/git.png', 'https://github.com'],
+  technologies: ['html', 'css', 'javaScript'],
+  name_detail: ['Eyasu Teshome', 'Front-End Dev', '2021'],
+},
+{
+  id: '3',
+  name: 'Tonic',
+  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  featured_image: './img/Snapshoot3.png',
+  link_to_live: ['See live', './img/live.png', 'https://github.com'],
+  link_to_source: ['See source', './img/git.png', 'https://github.com'],
+  technologies: ['html', 'css', 'javaScript'],
+  name_detail: ['Contributors: Eyasu Teshome', 'Full-stack website', '2022'],
+},
+{
+  id: '4',
+  name: 'Tonic',
+  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  featured_image: './img/Snapshoot4.png',
+  link_to_live: ['See live', './img/live.png', 'https://github.com'],
+  link_to_source: ['See source', './img/git.png', 'https://github.com'],
+  technologies: ['html', 'css', 'javaScript'],
+  name_detail: ['Eyasu Teshome', 'Front-End Dev', '2021'],
+},
 ];
 
 seeProjectDetail.forEach((button) => {
-    button.addEventListener('click', (e) => {
-        const selectedProject = projects.filter((project) => project.id === e.target.id)[0];
-        projectDetail.classList.add('active');
-        mainTag.classList.add('fixed_postion');
-        header.classList.add('fixed_postion');
+  button.addEventListener('click', (e) => {
+    const selectedProject = projects.filter((project) => project.id === e.target.id)[0];
+    projectDetail.classList.remove('hide');
+    mainTag.classList.add('fixed_postion');
+    header.classList.add('fixed_postion');
 
-        projectDetail.innerHTML = `
+    projectDetail.innerHTML = `
         <div class="overlay">
         <div id="modal">
-        <button data-close-button class="close">&times;</button>
+        <button data-close-button class="close1">&times;</button>
             <div class="project-detail-header">
                 <h3>${selectedProject.name}</h3>
 
@@ -127,7 +124,12 @@ seeProjectDetail.forEach((button) => {
         </div>
     </div>
       `;
-
-
+    const projectDetailClose = document.querySelector('.close1');
+    projectDetailClose.addEventListener('click', () => {
+      projectDetail.classList.add('hide');
+      console.log("HHHHH");
+      // mainTag.classList.remove('fixed_postion');
+      // header.classList.remove('fixed_postion');
     });
+  });
 });

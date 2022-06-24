@@ -543,7 +543,30 @@ hr {
     flex: 0 0 100%;
 }
 
-.close2 {}
+/* .project-detail.active {
+  transform: scale(1);
+}
+
+.mobile-menu.active {
+  transform: scale(1);
+} */
+
+/* .fixed_postion {
+  position: fixed;
+  filter: blur(8px);
+} */
+
+/* .fixed_headline {
+  position: fixed;
+  filter: blur(12px);
+} */
+
+.hide{
+  display: none;
+}
+.c{
+  display: block;
+}
 
 @media screen and (max-width: 768px) {
     .nav-ul a {
@@ -762,4 +785,8 @@ hr {
     border-radius: 8px;
     box-shadow: 0 2px 10px -5px;
     transition: transform 1s;
+}
+
+.hide{
+  display: none;
 }
