@@ -127,9 +127,6 @@ seeProjectDetail.forEach((button) => {
     const projectDetailClose = document.querySelector('.close1');
     projectDetailClose.addEventListener('click', () => {
       projectDetail.classList.add('hide');
-      console.log("HHHHH");
-      // mainTag.classList.remove('fixed_postion');
-      // header.classList.remove('fixed_postion');
     });
   });
 });
