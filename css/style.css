@@ -833,3 +833,15 @@ hr {
 .project-link {
   text-decoration: none;
 }
+
+.button-p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-message {
+  margin-left: 10px;
+  color: red;
+}
