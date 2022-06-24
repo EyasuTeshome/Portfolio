@@ -834,12 +834,13 @@ hr {
   text-decoration: none;
 }
 
-.button-p{
+.button-p {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.error-message{
+
+.error-message {
   margin-left: 10px;
   color: red;
 }
