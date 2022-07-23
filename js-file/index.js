@@ -140,3 +140,30 @@ submit.addEventListener('click', (event) => {
     error.innerHTML = 'Please make sure the E-mail <br>doesn\'t have uppercase letters';
   }
 });
+
+const fullNameForm = document.getElementById('user-name');
+const emailForm = document.getElementById('email-address');
+const messageForm = document.getElementById('msg');
+
+function handleChange() {
+  const formData = {
+    fullName: fullNameForm.value,
+    email: emailForm.value,
+    comment: messageForm.value,
+  };
+  localStorage.setItem('form', JSON.stringify(formData));
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const getFormValue = localStorage.getItem('form');
+  if (getFormValue) {
+    const formObject = JSON.parse(getFormValue);
+    fullNameForm.value = formObject.fullName;
+    emailForm.value = formObject.email;
+    messageForm.value = formObject.comment;
+  }
+});
+
+fullNameForm.onchange = handleChange;
+emailForm.onchange = handleChange;
+messageForm.onchange = handleChange;
