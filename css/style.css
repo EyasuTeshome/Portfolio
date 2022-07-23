@@ -245,7 +245,7 @@ button:hover {
 }
 
 .work-img1 {
-  background-image: url(../img/Snapshoot1.png);
+  background-image: url(../img/project-zema.png);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
@@ -263,7 +263,7 @@ button:hover {
 }
 
 .work-img2 {
-  background-image: url(../img/Snapshoot2.png);
+  background-image: url(../img/project-todo.png);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
