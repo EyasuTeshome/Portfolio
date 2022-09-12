@@ -19,9 +19,9 @@ In this project I have used linter for HTML and CSS, to make sure there are no l
 - Javascript
 
 
-## Live Demo (if available)
+## Live Demo 
 
-(https://eyasuteshome.github.io/Portfolio.github.io/)
+[Live Demo](https://eyasuteshome.github.io/Portfolio.github.io/)
 
 
 ## Getting Started
