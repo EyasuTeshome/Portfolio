@@ -159,6 +159,7 @@ h2 {
 
 .categories ul {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   padding-left: 0;
 }
@@ -169,6 +170,7 @@ h2 {
   border-radius: 8px;
   padding: 4px 12px;
   margin-right: 8px;
+  margin-bottom: 10px;
   color: #6070ff;
 }
 
@@ -271,7 +273,7 @@ button:hover {
 }
 
 .work-img3 {
-  background-image: url(../img/Snapshoot3.png);
+  background-image: url(../img/moviearena.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
@@ -279,7 +281,7 @@ button:hover {
 }
 
 .work-img4 {
-  background-image: url(../img/Snapshoot4.png);
+  background-image: url(../img/air.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;

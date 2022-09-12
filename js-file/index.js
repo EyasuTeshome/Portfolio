@@ -28,42 +28,42 @@ link3.addEventListener('click', () => {
 
 const projects = [{
   id: '1',
-  name: 'Tonic',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-  featured_image: './img/Snapshoot1.png',
-  link_to_live: ['See live', './img/live.png', 'https://github.com'],
-  link_to_source: ['See source', './img/git.png', 'https://github.com'],
+  name: 'Zema Songs',
+  description: 'This website is Zema Songs Concert website. In this website the 2022 Zema songs Concert is presented including the address, the performers and the programs arrangment. The website is built using HTML, CSS and Javascript',
+  featured_image: './img/project-zema.png',
+  link_to_live: ['See live', './img/live.png', 'https://eyasuteshome.github.io/Zema-songs/index.html'],
+  link_to_source: ['See source', './img/git.png', 'https://github.com/EyasuTeshome/Zema-songs'],
   technologies: ['html', 'css', 'javaScript'],
   name_detail: ['Eyasu Teshome ', 'Front-End Dev', '2022'],
 },
 {
   id: '2',
-  name: 'Tonic',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-  featured_image: './img/Snapshoot2.png',
-  link_to_live: ['See live', './img/live.png', 'https://github.com'],
-  link_to_source: ['See source', './img/git.png', 'https://github.com'],
+  name: 'To-do List',
+  description: 'This is a simple ToDO List website. the website enable the users to set multiple todos with different functionality like edit delete and mark as complete. Moreover the todo list will be store in local storage, as long as the user doesn\'t delete it, it won\'t be deleted.',
+  featured_image: './img/project-todo.png',
+  link_to_live: ['See live', './img/live.png', 'https://eyasuteshome.github.io/Todo-List/'],
+  link_to_source: ['See source', './img/git.png', 'https://github.com/EyasuTeshome/Todo-List'],
   technologies: ['html', 'css', 'javaScript'],
   name_detail: ['Eyasu Teshome', 'Front-End Dev', '2021'],
 },
 {
   id: '3',
-  name: 'Tonic',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-  featured_image: './img/Snapshoot3.png',
-  link_to_live: ['See live', './img/live.png', 'https://github.com'],
-  link_to_source: ['See source', './img/git.png', 'https://github.com'],
+  name: 'MovieArena',
+  description: 'This website presents the best Tv shows. Users can interact with the website by liking and commenting on the movies. We have used TVmaze and Involvement API to get the movie content and to store the like and the comments respectively. Javascript, HTML and CSS are the languages used to build the website.',
+  featured_image: './img/moviearena.jpeg',
+  link_to_live: ['See live', './img/live.png', 'https://eyasuteshome.github.io/MovieArena/'],
+  link_to_source: ['See source', './img/git.png', 'https://github.com/EyasuTeshome/MovieArena'],
   technologies: ['html', 'css', 'javaScript'],
   name_detail: ['Contributors: Eyasu Teshome', 'Full-stack website', '2022'],
 },
 {
   id: '4',
-  name: 'Tonic',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-  featured_image: './img/Snapshoot4.png',
-  link_to_live: ['See live', './img/live.png', 'https://github.com'],
-  link_to_source: ['See source', './img/git.png', 'https://github.com'],
-  technologies: ['html', 'css', 'javaScript'],
+  name: 'Global Airpollution Index',
+  description: 'In this project I have built Global Air Pollution Index. by using the Latitude and the Longtude of any location in the worl we can see the severity of Air pollution. On the homepage I have included the top 10 countries where the Air Pollution is high.',
+  featured_image: './img/air.jpeg',
+  link_to_live: ['See live', './img/live.png', 'https://631b5bf9ac6b01187d804c8c--stalwart-hotteok-4f8c89.netlify.app/'],
+  link_to_source: ['See source', './img/git.png', 'https://github.com/EyasuTeshome/Airpollution-Index'],
+  technologies: ['html', 'css', 'javaScript', 'React', 'Redux'],
   name_detail: ['Eyasu Teshome', 'Front-End Dev', '2021'],
 },
 ];
@@ -104,6 +104,8 @@ seeProjectDetail.forEach((button) => {
                         <li><button class="pop-button" type="button">${selectedProject.technologies[0]}</button></li>
                         <li><button class="pop-button" type="button">${selectedProject.technologies[1]}</button></li>
                         <li><button class="pop-button" type="button">${selectedProject.technologies[2]}</button></li>
+                        <li><button class="pop-button" type="button">${selectedProject.technologies[3]}</button></li>
+                        <li><button class="pop-button" type="button">${selectedProject.technologies[4]}</button></li>
 
                     </ul>
                     <div class="project-detail-buttons">
