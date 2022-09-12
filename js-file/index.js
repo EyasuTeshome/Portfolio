@@ -33,7 +33,7 @@ const projects = [{
   featured_image: './img/project-zema.png',
   link_to_live: ['See live', './img/live.png', 'https://eyasuteshome.github.io/Zema-songs/index.html'],
   link_to_source: ['See source', './img/git.png', 'https://github.com/EyasuTeshome/Zema-songs'],
-  technologies: ['html', 'css', 'javaScript'],
+  technologies: ['html', 'css', 'javaScript', 'Bootstrap', 'Git'],
   name_detail: ['Eyasu Teshome ', 'Front-End Dev', '2022'],
 },
 {
@@ -43,7 +43,7 @@ const projects = [{
   featured_image: './img/project-todo.png',
   link_to_live: ['See live', './img/live.png', 'https://eyasuteshome.github.io/Todo-List/'],
   link_to_source: ['See source', './img/git.png', 'https://github.com/EyasuTeshome/Todo-List'],
-  technologies: ['html', 'css', 'javaScript'],
+  technologies: ['html', 'css', 'javaScript', 'Bootstrap', 'Git'],
   name_detail: ['Eyasu Teshome', 'Front-End Dev', '2021'],
 },
 {
@@ -53,7 +53,7 @@ const projects = [{
   featured_image: './img/moviearena.jpeg',
   link_to_live: ['See live', './img/live.png', 'https://eyasuteshome.github.io/MovieArena/'],
   link_to_source: ['See source', './img/git.png', 'https://github.com/EyasuTeshome/MovieArena'],
-  technologies: ['html', 'css', 'javaScript'],
+  technologies: ['html', 'css', 'javaScript', 'TvMaze API', 'Git'],
   name_detail: ['Contributors: Eyasu Teshome', 'Full-stack website', '2022'],
 },
 {
