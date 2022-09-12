@@ -21,7 +21,7 @@ In this project I have used linter for HTML and CSS, to make sure there are no l
 
 ## Live Demo 
 
-[Live Demo](https://eyasuteshome.github.io/Portfolio.github.io/)
+[Live Demo](https://eyasuteshome.github.io/Portfolio/)
 
 
 ## Getting Started
