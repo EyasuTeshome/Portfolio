@@ -103,6 +103,15 @@ form ul {
   padding-left: 0;
 }
 
+.prof-flex {
+  display: flex;
+  align-items: center;
+}
+
+.prof-pic {
+  width: 20%;
+}
+
 .work {
   display: grid;
   align-items: center;
@@ -559,6 +568,15 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
+  .prof-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .prof-pic {
+    width: 60%;
+  }
+
   .nav-ul a {
     display: none;
   }
@@ -794,8 +812,18 @@ hr {
   overflow-y: auto;
 }
 
+::-webkit-scrollbar {
+  width: 0.2em;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000;
+}
+
 #modal {
   margin: auto;
+  width: 80vw;
   background-color: white;
   position: absolute;
   top: 0;
