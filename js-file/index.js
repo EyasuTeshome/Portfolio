@@ -29,7 +29,7 @@ link3.addEventListener('click', () => {
 const projects = [{
   id: '1',
   name: 'Zema Songs',
-  description: 'This website is Zema Songs Concert website. In this website the 2022 Zema songs Concert is presented including the address, the performers and the programs arrangment. The website is built using HTML, CSS and Javascript',
+  description: 'This website is the Zema Songs Concert website. On this website, the 2022 Zema Songs Concert is presented, including the address, the performers, and the program\'s arrangement. The website is built using HTML, CSS, and Javascript.',
   featured_image: './img/project-zema.png',
   link_to_live: ['See live', './img/live.png', 'https://eyasuteshome.github.io/Zema-songs/index.html'],
   link_to_source: ['See source', './img/git.png', 'https://github.com/EyasuTeshome/Zema-songs'],
@@ -39,7 +39,7 @@ const projects = [{
 {
   id: '2',
   name: 'To-do List',
-  description: 'This is a simple ToDO List website. the website enable the users to set multiple todos with different functionality like edit delete and mark as complete. Moreover the todo list will be store in local storage, as long as the user doesn\'t delete it, it won\'t be deleted.',
+  description: 'This is an easy-to-use to-do list website. The website allows users to create multiple tasks with varying functions, such as editing, deleting, and marking them as complete. Moreover, the to-do list will be stored in local storage, so as long as the user doesn\'t delete it, it won\'t be deleted.',
   featured_image: './img/project-todo.png',
   link_to_live: ['See live', './img/live.png', 'https://eyasuteshome.github.io/Todo-List/'],
   link_to_source: ['See source', './img/git.png', 'https://github.com/EyasuTeshome/Todo-List'],
@@ -49,7 +49,7 @@ const projects = [{
 {
   id: '3',
   name: 'MovieArena',
-  description: 'This website presents the best Tv shows. Users can interact with the website by liking and commenting on the movies. We have used TVmaze and Involvement API to get the movie content and to store the like and the comments respectively. Javascript, HTML and CSS are the languages used to build the website.',
+  description: 'This website presents the best TV shows. Users can interact with the website by liking and commenting on the movies. We have used the TVMaze and Involvement APIs to get the movie content and to store the likes and comments, respectively. Javascript, HTML, and CSS are the languages used to build the website.',
   featured_image: './img/moviearena.jpeg',
   link_to_live: ['See live', './img/live.png', 'https://eyasuteshome.github.io/MovieArena/'],
   link_to_source: ['See source', './img/git.png', 'https://github.com/EyasuTeshome/MovieArena'],
@@ -59,7 +59,7 @@ const projects = [{
 {
   id: '4',
   name: 'Global Airpollution Index',
-  description: 'In this project I have built Global Air Pollution Index. by using the Latitude and the Longtude of any location in the worl we can see the severity of Air pollution. On the homepage I have included the top 10 countries where the Air Pollution is high.',
+  description: 'In this project, I have built the Global Air Pollution Index. By using the latitude and longitude of any location in the world, we can see the severity of air pollution. On the homepage, I have included the top 10 countries where air pollution is high.',
   featured_image: './img/air.jpeg',
   link_to_live: ['See live', './img/live.png', 'https://631b5bf9ac6b01187d804c8c--stalwart-hotteok-4f8c89.netlify.app/'],
   link_to_source: ['See source', './img/git.png', 'https://github.com/EyasuTeshome/Airpollution-Index'],
@@ -84,7 +84,7 @@ seeProjectDetail.forEach((button) => {
             </div>
             <div class="work-content work-content-pop">
                     <p>${selectedProject.name_detail[0]}</p>
-               
+
                 <ul>
                     <li>${selectedProject.name_detail[1]}</li>
                 </ul>
